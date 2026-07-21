@@ -3,93 +3,61 @@ import React, { useState } from 'react';
 const ARTICLES = [
   {
     id: 1,
-    title: "Edge AI Revolution: How Intelligent Cameras Are Replacing Central Servers",
-    category: "Hardware & Edge AI",
+    title: "Building Autonomous Agent Loops: How to Make LLMs Execute Tasks While You Sleep",
+    category: "AI & Automation",
     readTime: "8 min read",
     date: "July 2026",
-    summary: "An in-depth look at how computer vision models deployed directly onto micro-chips are eliminating server lag and redefining automated physical security.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
-    videoUrl: "https://www.youtube.com/embed/WoMitMc895A",
+    summary: "Stop treating AI like a static chat box. Here is the exact architectural blueprint for chaining language models into self-correcting execution loops.",
+    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
+    videoUrl: "https://www.youtube.com/embed/zjkBMFhNj_g", // Educational AI engineering breakdown
     content: `
-      <p class="text-lg text-purple-200 font-medium mb-6">For decades, security and sensor cameras served a singular purpose: capture raw video streams and transmit them to centralized server rooms for human review. That brittle architecture is officially dead.</p>
+      <p class="text-lg text-emerald-300 font-medium mb-6">Most people use artificial intelligence like a glorified search engine—type a prompt, read the text, close the tab. But underground builders and systems engineers are using multi-stage agent loops to automate entire digital workflows from end to end.</p>
 
-      <h2 class="text-2xl font-bold text-white mt-8 mb-4">Moving Intelligence to the Edge</h2>
-      <p class="text-slate-300 mb-4">By shifting neural processing directly onto edge silicon, modern camera systems analyze local telemetry in real time, filtering out false positives and triggering automated mechanical responses within milliseconds.</p>
+      <h2 class="text-2xl font-bold text-white mt-8 mb-4">The Anatomy of an Autonomous Loop</h2>
+      <p class="text-slate-300 mb-4">An agentic loop consists of three core phases: Perception, Reasoning, and Execution. Instead of generating a single output, the model evaluates its own code or data response, checks for compilation or logical errors, and refines the payload before sending it downstream.</p>
       
-      <div class="my-8 p-6 bg-gradient-to-r from-purple-950/80 to-slate-900 rounded-2xl border border-purple-500/40 shadow-xl">
-        <h4 class="font-extrabold text-purple-300 text-lg mb-2">📐 Project & Assignment Framework</h4>
-        <p class="text-slate-300 text-sm leading-relaxed">When designing local edge nodes, optimizing the memory bandwidth between sensor arrays and processing units dictates whether your system encounters thermal throttling under load.</p>
+      <div class="my-8 p-6 bg-slate-900 rounded-2xl border border-emerald-500/40 shadow-xl">
+        <h4 class="font-extrabold text-emerald-400 text-lg mb-2">⚡ Project Architecture Note</h4>
+        <p class="text-slate-300 text-sm leading-relaxed">By combining edge webhooks with distributed JSON payloads, you can build self-healing pipelines that require zero human intervention once deployed.</p>
       </div>
 
-      <div class="my-10 p-8 bg-slate-900/90 rounded-2xl border border-purple-500/50 text-center shadow-2xl">
-        <h4 class="font-black text-white text-xl mb-3">Scale Your Hardware Automation Pipelines</h4>
-        <p class="text-sm text-slate-400 mb-6 max-w-lg mx-auto">Connect your edge device webhooks directly to cloud response workflows.</p>
-        <a href="https://www.make.com/en/register?pc=agenticblog" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 hover:bg-purple-500 text-white px-8 py-3.5 rounded-xl font-bold transition-all shadow-lg shadow-purple-600/40 text-base">Claim Your Free Make.com Account →</a>
+      <div class="my-10 p-8 bg-slate-900/90 rounded-2xl border border-emerald-500/50 text-center shadow-2xl">
+        <h4 class="font-black text-white text-xl mb-3">Scale Your Workflow Automation</h4>
+        <p class="text-sm text-slate-400 mb-6 max-w-lg mx-auto">Connect your automated trigger scripts to enterprise visual orchestration builders.</p>
+        <a href="https://www.make.com/en/register?pc=ghostcodelabs" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 hover:bg-emerald-500 text-slate-950 px-8 py-3.5 rounded-xl font-bold transition-all shadow-lg shadow-emerald-900/50 text-base">Claim Your Free Make.com Account →</a>
       </div>
     `
   },
   {
     id: 2,
-    title: "The Rise of Digital Coworkers: Why AI Agents Are Replacing Static Chatbots",
-    category: "AI Productivity",
-    readTime: "7 min read",
+    title: "The Reality of Edge Computing: Why Local Neural Nets Beat Cloud Latency",
+    category: "Systems Engineering",
+    readTime: "9 min read",
     date: "July 2026",
-    summary: "How multi-step autonomous reasoning agents are shifting the workplace from simple text generation to independent task completion.",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
-    videoUrl: "https://www.youtube.com/embed/WoMitMc895A",
+    summary: "An engineering deep-dive into deploying compressed computer vision models directly onto micro-silicon hardware nodes.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    videoUrl: "https://www.youtube.com/embed/7EhRkOXpby0", // Educational systems engineering breakdown
     content: `
-      <p class="text-lg text-purple-200 font-medium mb-6">We have officially crossed the threshold from AI as a passive assistant to AI as an active digital coworker capable of executing complex workflows across multiple software environments.</p>
+      <p class="text-lg text-emerald-300 font-medium mb-6">Relying on cloud server round-trips for real-time sensor data introduces fatal latency spikes. When handling high-frequency telemetry, intelligence must live directly on the physical hardware.</p>
 
-      <h2 class="text-2xl font-bold text-white mt-8 mb-4"> Autonomous Planning Loops</h2>
-      <p class="text-slate-300 mb-4">Unlike standard language models that wait for prompt inputs, modern agent architectures plan, reason, execute database queries, and coordinate multi-step tasks with minimal human oversight.</p>
+      <h2 class="text-2xl font-bold text-white mt-8 mb-4">Optimizing Memory Bandwidth on Silicon Nodes</h2>
+      <p class="text-slate-300 mb-4">When compiling neural weights for edge deployment, quantization and pruning techniques reduce memory overhead without sacrificing inference accuracy.</p>
     `
   },
   {
     id: 3,
-    title: "The Physics of Ground-Sensing Radar: Building Drowsy-Driver Safety Systems",
-    category: "Automotive Engineering",
-    readTime: "10 min read",
+    title: "Advanced Prompt Chaining: Forcing LLMs to Write Production-Grade Code",
+    category: "Software Architecture",
+    readTime: "7 min read",
     date: "July 2026",
-    summary: "An exhaustive engineering breakdown of micro-radar sensor placement, signal reflection mathematics, and real-time cabin safety automation.",
-    image: "https://images.unsplash.com/photo-1508974239320-0a029497e820?auto=format&fit=crop&w=1200&q=80",
-    videoUrl: "https://www.youtube.com/embed/WoMitMc895A",
+    summary: "How to eliminate hallucinations by setting up adversarial verification steps between multiple model instances.",
+    image: "https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=1200&q=80",
+    videoUrl: "https://www.youtube.com/embed/SqcY0GlETPk", // Educational coding architecture tutorial
     content: `
-      <p class="text-lg text-purple-200 font-medium mb-6">When designing physical safety systems for modern vehicle chassis, relying solely on visual camera feeds introduces catastrophic blind spots during heavy fog, dust, or night operations. True automotive resilience demands multi-spectrum ground-sensing telemetry.</p>
+      <p class="text-lg text-emerald-300 font-medium mb-6">Generic prompts yield generic code. If you want production-ready architecture, you have to force models through strict adversarial code-review pipelines.</p>
 
-      <h2 class="text-2xl font-bold text-white mt-8 mb-4">Sensor Placement & Chassis Integration Mechanics</h2>
-      <p class="text-slate-300 mb-4">For students and hardware builders designing safety prototypes, positioning micro-radar units requires accounting for vibrational damping, structural chassis interference, and localized thermal dissipation.</p>
-    `
-  },
-  {
-    id: 4,
-    title: "Inside Claude Science: How Frontier Models Are Accelerating Pharmaceutical Research",
-    category: "Scientific Computing",
-    readTime: "9 min read",
-    date: "July 2026",
-    summary: "Exploring specialized AI workbenches designed to parse complex scientific literature, run simulations, and automate laboratory workflows.",
-    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80",
-    videoUrl: "https://www.youtube.com/embed/WoMitMc895A",
-    content: `
-      <p class="text-lg text-purple-200 font-medium mb-6">Artificial intelligence has moved past consumer novelties into specialized scientific laboratories, where intelligent workbenches automate data synthesis and trial analysis at unprecedented speeds.</p>
-
-      <h2 class="text-2xl font-bold text-white mt-8 mb-4">Automating Complex Research Pipelines</h2>
-      <p class="text-slate-300 mb-4">By pairing high-capacity context windows with specialized domain knowledge, researchers can execute multi-variable simulations in hours rather than months.</p>
-    `
-  },
-  {
-    id: 5,
-    title: "Why 80% of Enterprise AI Transformations Fail: The Architecture Trap",
-    category: "Enterprise Systems",
-    readTime: "11 min read",
-    date: "July 2026",
-    summary: "A critical look at why throwing advanced models at broken management workflows accelerates failure rather than solving efficiency bottlenecks.",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
-    videoUrl: "https://www.youtube.com/embed/WoMitMc895A",
-    content: `
-      <p class="text-lg text-purple-200 font-medium mb-6">Organizations pouring capital into artificial intelligence often discover a harsh reality: AI does not fix poor management or broken data governance—it simply amplifies whatever operational foundation already exists.</p>
-
-      <h2 class="text-2xl font-bold text-white mt-8 mb-4">The Governance and Integration Deficit</h2>
-      <p class="text-slate-300 mb-4">Success in modern automation relies entirely on aligning internal data structures, cleaning operational bottlenecks, and selecting the right infrastructure before deploying generative models.</p>
+      <h2 class="text-2xl font-bold text-white mt-8 mb-4">The Multi-Stage Audit Protocol</h2>
+      <p class="text-slate-300 mb-4">Model A writes the baseline logic; Model B analyzes it specifically for security vulnerabilities and race conditions; Model C compiles the final tested patch.</p>
     `
   }
 ];
@@ -108,28 +76,28 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-purple-500 selection:text-white">
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-emerald-500 selection:text-slate-950">
       {/* Brand Header */}
       <header className="border-b border-slate-800/80 bg-slate-900/90 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => setSelectedArticle(null)}>
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 via-indigo-600 to-pink-500 flex items-center justify-center font-black text-xl shadow-lg shadow-purple-900/50">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 via-teal-600 to-cyan-500 flex items-center justify-center font-black text-xl shadow-lg shadow-emerald-950/50 text-slate-950">
               ⚡
             </div>
             <div>
-              <span className="font-extrabold text-lg tracking-wider bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
-                SYNAPSE & CO.
+              <span className="font-extrabold text-lg tracking-wider bg-gradient-to-r from-white via-emerald-200 to-emerald-400 bg-clip-text text-transparent">
+                GHOSTCODE LABS
               </span>
-              <p className="text-[10px] tracking-widest text-purple-400 font-bold uppercase">Autonomous Intelligence Journal</p>
+              <p className="text-[10px] tracking-widest text-emerald-400 font-bold uppercase">Underground Engineering & AI</p>
             </div>
           </div>
           <a 
-            href="https://www.make.com/en/register?pc=agenticblog" 
+            href="https://www.make.com/en/register?pc=ghostcodelabs" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="bg-purple-600 hover:bg-purple-500 text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg shadow-purple-600/30"
+            className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-5 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg shadow-emerald-500/20"
           >
-            Deploy Automation →
+            Deploy Systems →
           </a>
         </div>
       </header>
@@ -140,14 +108,14 @@ export default function App() {
           <div>
             {/* Hero Section */}
             <div className="text-center max-w-4xl mx-auto mb-16">
-              <span className="inline-block text-xs font-extrabold uppercase tracking-widest text-purple-300 bg-purple-950/90 border border-purple-500/40 px-4 py-1.5 rounded-full mb-6 shadow-inner">
-                🔥 Investigating Global AI Breakthroughs & Project Blueprints
+              <span className="inline-block text-xs font-extrabold uppercase tracking-widest text-emerald-300 bg-emerald-950/90 border border-emerald-500/40 px-4 py-1.5 rounded-full mb-6 shadow-inner">
+                💀 Raw Engineering Blueprints & AI Intelligence
               </span>
               <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
-                Where Elite Engineering Meets <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent">Viral AI Truths</span>
+                Built for <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">Minds Who Build</span>
               </h1>
               <p className="text-slate-300 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-                Deep investigative stories, hardware project specs, and underground automation frameworks for high-impact builders and students.
+                No fluff. Deep technical investigations, autonomous system architectures, and raw project breakdowns for high-performance builders.
               </p>
             </div>
 
@@ -157,7 +125,7 @@ export default function App() {
                 <div 
                   key={article.id}
                   onClick={() => setSelectedArticle(article)}
-                  className="group bg-slate-900/90 border border-slate-800/90 rounded-2xl overflow-hidden cursor-pointer hover:border-purple-500/80 transition-all duration-300 hover:-translate-y-1.5 shadow-2xl flex flex-col justify-between"
+                  className="group bg-slate-900/90 border border-slate-800/90 rounded-2xl overflow-hidden cursor-pointer hover:border-emerald-500/80 transition-all duration-300 hover:-translate-y-1.5 shadow-2xl flex flex-col justify-between"
                 >
                   <div>
                     <div className="h-52 overflow-hidden relative">
@@ -167,7 +135,7 @@ export default function App() {
                         alt={article.title} 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
-                      <span className="absolute top-3 left-3 z-20 text-xs font-bold text-purple-300 bg-slate-950/90 backdrop-blur border border-purple-500/40 px-3 py-1 rounded-lg">
+                      <span className="absolute top-3 left-3 z-20 text-xs font-bold text-emerald-300 bg-slate-950/90 backdrop-blur border border-emerald-500/40 px-3 py-1 rounded-lg">
                         {article.category}
                       </span>
                     </div>
@@ -176,7 +144,7 @@ export default function App() {
                         <span>{article.date}</span>
                         <span>{article.readTime}</span>
                       </div>
-                      <h2 className="text-xl font-bold mb-3 group-hover:text-purple-300 transition-colors leading-snug">
+                      <h2 className="text-xl font-bold mb-3 group-hover:text-emerald-300 transition-colors leading-snug">
                         {article.title}
                       </h2>
                       <p className="text-slate-400 text-sm line-clamp-3 mb-6 leading-relaxed">
@@ -185,8 +153,8 @@ export default function App() {
                     </div>
                   </div>
                   <div className="px-6 pb-6 pt-0">
-                    <div className="text-purple-400 text-sm font-bold flex items-center gap-2 group-hover:translate-x-1.5 transition-transform">
-                      Read Investigation →
+                    <div className="text-emerald-400 text-sm font-bold flex items-center gap-2 group-hover:translate-x-1.5 transition-transform">
+                      Read Breakdown →
                     </div>
                   </div>
                 </div>
@@ -194,11 +162,11 @@ export default function App() {
             </div>
 
             {/* Newsletter Subscription Box */}
-            <div className="max-w-2xl mx-auto bg-gradient-to-br from-purple-950/80 via-slate-900 to-indigo-950/80 border border-purple-500/40 rounded-3xl p-8 md:p-12 text-center shadow-2xl mb-12">
+            <div className="max-w-2xl mx-auto bg-gradient-to-br from-emerald-950/80 via-slate-900 to-teal-950/80 border border-emerald-500/40 rounded-3xl p-8 md:p-12 text-center shadow-2xl mb-12">
               <div className="text-3xl mb-3">🛡️</div>
-              <h3 className="text-2xl font-black text-white mb-3">Never Miss a Classified Blueprint</h3>
+              <h3 className="text-2xl font-black text-white mb-3">Lock In Your Access</h3>
               <p className="text-slate-300 text-sm md:text-base mb-6 leading-relaxed">
-                Join thousands of builders receiving our weekly deep-dive reports on autonomous systems, project data, and solo scaling.
+                Get our raw engineering breakdowns and technical project drops straight to your inbox.
               </p>
               {!emailSubscribed ? (
                 <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -208,18 +176,18 @@ export default function App() {
                     placeholder="Enter your email address..." 
                     value={emailInput}
                     onChange={(e) => setEmailInput(e.target.value)}
-                    className="bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-purple-500 flex-1 max-w-sm"
+                    className="bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-emerald-500 flex-1 max-w-sm"
                   />
                   <button 
                     type="submit" 
-                    className="bg-purple-600 hover:bg-purple-500 text-white font-bold px-6 py-3 rounded-xl text-sm transition-all shadow-lg shadow-purple-600/30"
+                    className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-xl text-sm transition-all shadow-lg shadow-emerald-500/20"
                   >
-                    Lock In Access
+                    Subscribe
                   </button>
                 </form>
               ) : (
-                <div className="bg-purple-900/50 border border-purple-500/50 rounded-xl p-4 text-purple-200 font-semibold text-sm">
-                  ✓ Success! You are locked in for the next deep-dive drop.
+                <div className="bg-emerald-900/50 border border-emerald-500/50 rounded-xl p-4 text-emerald-200 font-semibold text-sm">
+                  ✓ Success! You are locked in.
                 </div>
               )}
             </div>
@@ -228,15 +196,15 @@ export default function App() {
           <div className="max-w-3xl mx-auto">
             <button 
               onClick={() => setSelectedArticle(null)}
-              className="text-purple-400 font-bold mb-8 flex items-center gap-2 hover:text-purple-300 transition-colors"
+              className="text-emerald-400 font-bold mb-8 flex items-center gap-2 hover:text-emerald-300 transition-colors"
             >
-              ← Back to Journal Index
+              ← Back to Index
             </button>
 
             <article className="bg-slate-900/60 border border-slate-800/90 rounded-3xl p-8 md:p-12 shadow-2xl backdrop-blur-sm">
               <div className="mb-8">
                 <div className="flex items-center gap-3 mb-4 flex-wrap">
-                  <span className="text-xs font-bold text-purple-300 bg-purple-950 border border-purple-500/40 px-3 py-1 rounded-lg">
+                  <span className="text-xs font-bold text-emerald-300 bg-emerald-950 border border-emerald-500/40 px-3 py-1 rounded-lg">
                     {selectedArticle.category}
                   </span>
                   <span className="text-xs text-slate-400">• Published {selectedArticle.date}</span>
@@ -255,14 +223,14 @@ export default function App() {
                 />
               </div>
 
-              {/* Embedded Video Feature Section */}
+              {/* Educational Video Embed */}
               {selectedArticle.videoUrl && (
                 <div className="mb-10">
-                  <h3 className="text-lg font-bold text-purple-300 mb-3">📺 Multimedia Video Breakdown</h3>
+                  <h3 className="text-lg font-bold text-emerald-300 mb-3">📺 Technical Video Breakdown</h3>
                   <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-black">
                     <iframe 
                       src={selectedArticle.videoUrl} 
-                      title="Article Video Breakdown"
+                      title="Educational Technical Breakdown"
                       className="absolute top-0 left-0 w-full h-full border-0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -282,7 +250,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="border-t border-slate-800/80 mt-20 py-8 text-center text-slate-500 text-sm">
-        <p>© 2026 Synapse & Co. Engineered for Viral Scale.</p>
+        <p>© 2026 Ghostcode Labs. Raw Intelligence & Systems.</p>
       </footer>
     </div>
   );
