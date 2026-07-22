@@ -29,13 +29,17 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
+        }
+
+        .card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 12px;
             padding: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
         }
 
         header {
@@ -124,6 +128,64 @@
             display: block;
         }
 
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #ffffff;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        .articles-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .article-card {
+            background: rgba(11, 15, 25, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            transition: border-color 0.2s;
+        }
+
+        .article-card:hover {
+            border-color: var(--accent-color);
+        }
+
+        .article-tag {
+            font-size: 11px;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .article-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .article-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .video-concept {
+            font-size: 13px;
+            color: #6ee7b7;
+            background: rgba(16, 185, 129, 0.1);
+            padding: 8px 12px;
+            border-radius: 6px;
+            border-left: 3px solid #10b981;
+        }
+
         footer {
             margin-top: 30px;
             border-top: 1px solid var(--border-color);
@@ -137,24 +199,89 @@
 <body>
 
     <div class="container">
-        <header>
-            <div class="logo-area">
-                <span class="logo-icon">⚡</span>
-                <h1>GHOSTCODE LABS</h1>
+        <!-- Hero Card -->
+        <div class="card">
+            <header>
+                <div class="logo-area">
+                    <span class="logo-icon">⚡</span>
+                    <h1>GHOSTCODE LABS</h1>
+                </div>
+                <div class="badge">Active Node</div>
+            </header>
+
+            <section class="hero-section">
+                <p style="color: var(--accent-color); font-weight: 600; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; margin-bottom: 8px;">Underground Engineering & AI</p>
+                <h2>Built for Minds Who Build</h2>
+                <p>No fluff. Deep technical investigations, autonomous system architectures, and raw project breakdowns for high-performance builders.</p>
+                <a href="#articles" class="action-link">Explore Investigations &rarr;</a>
+            </section>
+
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80" alt="Engineering Infrastructure">
             </div>
-            <div class="badge">Active Node</div>
-        </header>
+        </div>
 
-        <section class="hero-section">
-            <p style="color: var(--accent-color); font-weight: 600; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; margin-bottom: 8px;">Underground Engineering & AI</p>
-            <h2>Built for Minds Who Build</h2>
-            <p>No fluff. Deep technical investigations, autonomous system architectures, and raw project breakdowns for high-performance builders.</p>
-            <a href="#" class="action-link">Deploy Systems &rarr;</a>
-        </section>
+        <!-- Articles & Research Feed -->
+        <div class="card" id="articles">
+            <h2 class="section-title">Technical Investigations & Research</h2>
+            
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <div class="article-card">
+                    <span class="article-tag">Automotive Safety & AI</span>
+                    <h3>Beyond the Black Box: Demystifying AI-Driven Driver Monitoring Systems (DMS) in 2026</h3>
+                    <p>Breaking down how CNNs process micro-expressions and gaze tracking at sub-50-millisecond latencies to satisfy rigorous safety regulations without causing alert fatigue.</p>
+                    <div class="video-concept"><strong>Video Concept:</strong> Benchmarking Real-Time Eye Tracking & Latency on Edge AI Chips.</div>
+                </div>
 
-        <div class="image-container">
-            <!-- Replace or keep your image source below -->
-            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80" alt="Engineering Infrastructure">
+                <!-- Article 2 -->
+                <div class="article-card">
+                    <span class="article-tag">Prototyping & Hardware</span>
+                    <h3>Ground-Sensing Radar Meets Cabin AI: Prototyping Next-Gen Drowsy Driver Interventions</h3>
+                    <p>An engineering breakdown of sensor placement, signal fusion, and low-level microcontroller integration combining ground-sensing radar and optical telemetry for micro-sleep prevention.</p>
+                    <div class="video-concept"><strong>Video Concept:</strong> Wiring Micro-Radar and In-Cabin IR Sensors for Early Fatigue Interventions.</div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="article-card">
+                    <span class="article-tag">Vehicle Electrical Architecture</span>
+                    <h3>The Software-Defined Vehicle (SDV) Revolution: Why Legacy ECUs Are Dying</h3>
+                    <p>Investigating how centralized domain controllers, over-the-air (OTA) updates, and high-speed automotive Ethernet are rewriting modern electrical engineering standards.</p>
+                    <div class="video-concept"><strong>Video Concept:</strong> Tearing Down a Multi-ECU Network: Transitioning to Zone-Based Architectures.</div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="article-card">
+                    <span class="article-tag">Generative CAE & CFD</span>
+                    <h3>Generative AI in the Garage: Accelerating Custom Chassis Design and CFD Simulations</h3>
+                    <p>Leveraging machine learning surrogate models to compress months of computer-aided engineering and aerodynamic testing into mere hours of simulation.</p>
+                    <div class="video-concept"><strong>Video Concept:</strong> Running AI-Assisted CFD Simulations for Optimum Chassis Aerodynamics.</div>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="article-card">
+                    <span class="article-tag">Bus Systems & Diagnostics</span>
+                    <h3>Decoding Synthetic CAN-Bus Traffic: Reverse Engineering Hidden Vehicle Telemetry</h3>
+                    <p>A deep dive into sniffing, filtering, and injecting custom frames across the Controller Area Network bus for custom safety module integration.</p>
+                    <div class="video-concept"><strong>Video Concept:</strong> Live CAN-Bus Packet Sniffing and Custom Data Logging via Arduino & Python.</div>
+                </div>
+
+                <!-- Article 6 -->
+                <div class="article-card">
+                    <span class="article-tag">Powertrain & Thermal</span>
+                    <h3>Thermal Runaway Mitigation: Advanced CFD Analysis for High-Performance EV Battery Packs</h3>
+                    <p>Investigating phase-change cooling materials, liquid-cooling geometry, and real-time thermal simulation models to keep high-density packs safe.</p>
+                    <div class="video-concept"><strong>Video Concept:</strong> Simulating Heat Dissipation and Coolant Flow in Custom EV Battery Casings.</div>
+                </div>
+
+                <!-- Article 7 -->
+                <div class="article-card">
+                    <span class="article-tag">Autonomous Logistics</span>
+                    <h3>The Rise of Autonomous Material Handling: AI-Powered AMRs on the Factory Floor</h3>
+                    <p>How edge AI navigation and autonomous mobile robots are transforming underground manufacturing cells to achieve zero-downtime logistics.</p>
+                    <div class="video-concept"><strong>Video Concept:</strong> Mapping a Smart Factory Floor with LiDAR and Autonomous Mobile Robots.</div>
+                </div>
+            </div>
         </div>
 
         <footer>
